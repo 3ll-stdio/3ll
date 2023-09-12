@@ -1,0 +1,250 @@
+:root {
+  --font-heading: Tektur, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-paragraph: "Zen Maru Gothic", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  --text-4xl: 4rem;
+  --text-3xl: 3rem;
+  --text-2xl: 2rem;
+  --text-xl: 1.5rem;
+  --text-lg: 1.25rem;
+  --text-md: 1.125rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  --black: #000000;
+  --neutral-10: #0D0D0D;
+  --neutral-9: #1A1A1A;
+  --neutral-8: #333333;
+  --neutral-7: #4D4D4D;
+  --neutral-6: #666666;
+  --neutral-5: #808080;
+  --neutral-4: #999999;
+  --neutral-3: #B3B3B3;
+  --neutral-2: #CCCCCC;
+  --neutral-1: #E6E6E6;
+  --neutral-0: #F2F2F2;
+  --white: #ffffff;
+
+  --spacing-9xl: 9rem;
+  --spacing-8xl: 8rem;
+  --spacing-7xl: 7rem;
+  --spacing-6xl: 6rem;
+  --spacing-5xl: 5rem;
+  --spacing-4xl: 4rem;
+  --spacing-3xl: 3rem;
+  --spacing-2xl: 2rem;
+  --spacing-xl: 1.5rem;
+  --spacing-lg: 1.25rem;
+  --spacing-md: 1rem;
+  --spacing-sm: 0.75rem;
+  --spacing-xs: 0.5rem;
+  --spacing-2xs: 0.25rem;
+
+  --radius-circle: 50%;
+  --radius-md: var(--spacing-md);
+  --radius-sm: var(--spacing-xs);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*:focus,
+*:focus-within,
+*:focus-visible,
+*:active {
+  outline: none;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: clamp(13px, 1.6vw, 16px);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-paragraph);
+  background: var(--neutral-10);
+  color: var(--neutral-0);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.gutter {
+  width: 100%;
+  max-width: 1000px;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  user-select: none;
+}
+
+dialog {
+  margin: 0 auto;
+  border: 0;
+}
+
+input, textarea {
+  background: none;
+  border: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h,
+.s1,
+.s2,
+.s3,
+.text-button,
+.text-button-sm {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+p,
+.p,
+.text-label,
+.text-input,
+.text-nav {
+  font-family: var(--font-paragraph);
+  line-height: 1.3;
+}
+
+.h1 {
+  font-size: var(--text-4xl);
+}
+
+.h2 {
+  font-size: var(--text-3xl);
+}
+
+.h3 {
+  font-size: var(--text-2xl);
+}
+
+.h4,
+.s1 {
+  font-size: var(--text-xl);
+}
+
+.h5,
+.s2,
+.p1,
+.p1-medium {
+  font-size: var(--text-lg);
+}
+
+.h6,
+.s3,
+.p2,
+.p2-medium,
+.text-button {
+  font-size: var(--text-md);
+}
+
+.p3,
+.p3-medium,
+.text-input,
+.text-nav,
+.text-button-sm {
+  font-size: var(--text-base);
+}
+
+.p4,
+.p4-medium,
+.text-label {
+  font-size: var(--text-sm);
+}
+
+.p5,
+.p5-medium {
+  font-size: var(--text-xs);
+}
+
+.h1,
+.h2 {
+  font-weight: 900;
+}
+
+.h3,
+.h4 {
+  font-weight: 800;
+}
+
+.h5,
+.h6 {
+  font-weight: 700;
+}
+
+.s1,
+.s2,
+.s3,
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.text-label {
+  font-weight: 400;
+}
+
+.p1-medium,
+.p2-medium,
+.p3-medium,
+.p4-medium,
+.p5-medium {
+  font-weight: 500;
+}
+
+.text-nav,
+.text-button-sm,
+.text-input {
+  font-weight: 600;
+}
+
+.text-button {
+  font-weight: 800;
+}
