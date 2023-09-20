@@ -46,17 +46,11 @@
   --radius-sm: var(--spacing-xs);
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 *:focus,
