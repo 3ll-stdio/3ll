@@ -17,7 +17,6 @@ header {
 .logo {
   width: auto;
   height: 2.5rem;
-  aspect-ratio: 2 / 1;
   align-self: flex-start;
   fill: var(--neutral-0);
   flex-shrink: 0;
