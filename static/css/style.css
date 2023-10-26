@@ -116,6 +116,10 @@ main {
   transform: scale(1.05);
 }
 
+.product-card:hover img {
+  filter: brightness(0.2);
+}
+
 .product-card img {
   position: absolute;
   z-index: -1;
@@ -127,7 +131,7 @@ main {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.4);
-  transition: opacity 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 .product-available {
@@ -188,13 +192,5 @@ main {
     width: 25rem;
     height: 100%;
     min-height: auto;
-  }
-
-  .product-card img {
-    opacity: 0;
-  }
-
-  .product-card:hover img {
-    opacity: 1;
   }
 }
